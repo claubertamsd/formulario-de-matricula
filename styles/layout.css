@@ -47,5 +47,43 @@ aside{
     & span {
       color: var(--text-highlight);
     }
+ }
+}
+
+.mobile-aside{
+  display: none;
+}
+
+
+@media (width <= 620px){
+
+  #app{
+    grid-template-columns: 1fr;
+    height: auto;
+    
+  }
+
+  main{
+    padding: 1.5rem;
+  }
+
+  .mobile-aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+
+    & > img{
+      width: 12.6875rem;
+    }
+
+    .mobile-img {
+      width: 19.5rem;
+    }
+  }
+
+  .desktop-aside{
+    display: none;
   }
 }
